@@ -85,7 +85,7 @@ myForm.addEventListener('submit', function(event) {
 		document.getElementById("yourMessageIsSent").innerHTML = alertSecondaryContact;
 
 		// (B) FETCH
-		fetch("/assets/php/contact/mailer.php", {
+		fetch("./assets/php/contact/mailer.php", {
 		    method: "post",
 		    body: data
 		})
